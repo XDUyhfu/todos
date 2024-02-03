@@ -6,10 +6,8 @@ exports[`List组件测试 > 快照测试 1`] = `
     role="list-item"
     style="border: 1px solid #ccc; margin-bottom: 10px;"
   >
-    标题: 
-    <span
-      style="display: none;"
-    >
+    标题:
+    <span>
       这是一个测试的todo1
     </span>
     <br />
@@ -20,7 +18,7 @@ exports[`List组件测试 > 快照测试 1`] = `
     <br />
     创建时间: 
     <span>
-      2024-02-03 14:44:49
+      2024-02-03 22:14:39
     </span>
     <br />
     状态:
@@ -32,10 +30,8 @@ exports[`List组件测试 > 快照测试 1`] = `
     role="list-item"
     style="border: 1px solid #ccc; margin-bottom: 10px;"
   >
-    标题: 
-    <span
-      style="display: none;"
-    >
+    标题:
+    <span>
       这是一个测试的todo
     </span>
     <br />
@@ -46,7 +42,7 @@ exports[`List组件测试 > 快照测试 1`] = `
     <br />
     创建时间: 
     <span>
-      2024-02-03 14:44:49
+      2024-02-03 22:14:39
     </span>
     <br />
     状态:
@@ -58,10 +54,8 @@ exports[`List组件测试 > 快照测试 1`] = `
     role="list-item"
     style="border: 1px solid #ccc; margin-bottom: 10px;"
   >
-    标题: 
-    <span
-      style="display: none;"
-    >
+    标题:
+    <span>
       这是一个测试的todo
     </span>
     <br />
@@ -72,7 +66,7 @@ exports[`List组件测试 > 快照测试 1`] = `
     <br />
     创建时间: 
     <span>
-      2024-02-03 14:44:49
+      2024-02-03 22:14:39
     </span>
     <br />
     状态:
@@ -84,10 +78,8 @@ exports[`List组件测试 > 快照测试 1`] = `
     role="list-item"
     style="border: 1px solid #ccc; margin-bottom: 10px;"
   >
-    标题: 
-    <span
-      style="display: none;"
-    >
+    标题:
+    <span>
       这是一个测试的todo
     </span>
     <br />
@@ -98,7 +90,7 @@ exports[`List组件测试 > 快照测试 1`] = `
     <br />
     创建时间: 
     <span>
-      2024-02-03 14:44:49
+      2024-02-03 22:14:39
     </span>
     <br />
     状态:
@@ -110,10 +102,8 @@ exports[`List组件测试 > 快照测试 1`] = `
     role="list-item"
     style="border: 1px solid #ccc; margin-bottom: 10px;"
   >
-    标题: 
-    <span
-      style="display: none;"
-    >
+    标题:
+    <span>
       这是一个测试的todo
     </span>
     <br />
@@ -124,7 +114,7 @@ exports[`List组件测试 > 快照测试 1`] = `
     <br />
     创建时间: 
     <span>
-      2024-02-03 14:44:49
+      2024-02-03 22:14:39
     </span>
     <br />
     状态:

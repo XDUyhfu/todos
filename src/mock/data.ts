@@ -12,6 +12,13 @@ export interface TodoItem {
   status: Status;
 }
 
+export const GenerateUndoItem = () => ({
+  title: "这是一个测试的todo",
+  content: "我今天要完成这件事情",
+  createTime: dayjs().format("YYYY-MM-DD HH:mm:ss"),
+  status: Status.UNDONE,
+});
+
 export const data: TodoItem[] = [
   {
     title: "这是一个测试的todo1",

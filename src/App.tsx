@@ -1,11 +1,15 @@
 import { List } from "./components/List.tsx";
-import { data } from "./mock/data.ts";
+import { Header } from "./components/Header.tsx";
+import { useTodoList } from "./hook";
+import { Space } from "antd";
 
 function App() {
+  const { list, addUndoItem } = useTodoList();
   return (
-    <>
-      <List data={data}></List>
-    </>
+    <Space direction="vertical">
+      <Header addUndoItem={addUndoItem} />
+      <List data={list}></List>
+    </Space>
   );
 }
 

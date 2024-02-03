@@ -32,6 +32,4 @@ describe("List组件测试", () => {
     const elements = screen.getAllByRole("list-item");
     expect(elements).toMatchSnapshot();
   });
-
-  it("", () => {});
 });
