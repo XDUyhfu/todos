@@ -11,5 +11,7 @@ export const useTodoList = () => {
   return {
     list,
     addUndoItem: (item: TodoItem) => setList([...list, item]),
+    deleteItem: (item: TodoItem) =>
+      setList(list.filter((it) => it.key !== item.key)),
   };
 };

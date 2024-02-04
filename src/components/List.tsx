@@ -1,12 +1,18 @@
 import { TodoItem } from "../mock/data.ts";
 
-export const List = ({ data }: { data: TodoItem[] }) => {
+export const List = ({
+  data,
+  deleteItem,
+}: {
+  data: TodoItem[];
+  deleteItem: (item: TodoItem) => void;
+}) => {
   return (
     <div>
-      {data.map((item, index) => {
+      {data.map((item) => {
         return (
           <div
-            key={index}
+            key={item.key}
             role="list-item"
             style={{ border: "1px solid #ccc", marginBottom: 10 }}
           >
@@ -19,6 +25,8 @@ export const List = ({ data }: { data: TodoItem[] }) => {
             <br />
             状态:
             <span>{item.status}</span>
+            <br />
+            <button onClick={() => deleteItem(item)}>删除</button>
           </div>
         );
       })}

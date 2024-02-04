@@ -4,11 +4,11 @@ import { useTodoList } from "./hook";
 import { Space } from "antd";
 
 function App() {
-  const { list, addUndoItem } = useTodoList();
+  const { list, addUndoItem, deleteItem } = useTodoList();
   return (
     <Space direction="vertical">
       <Header addUndoItem={addUndoItem} />
-      <List data={list}></List>
+      <List data={list} deleteItem={deleteItem}></List>
     </Space>
   );
 }

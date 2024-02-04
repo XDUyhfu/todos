@@ -14,11 +14,24 @@ describe("useTest测试", () => {
 });
 
 describe("todo list测试", () => {
-  it("添加todo", () => {
+  it("添加item", () => {
     const { result } = renderHook(useTodoList);
     act(() => {
       result.current.addUndoItem(GenerateUndoItem());
     });
     expect(result.current.list.length).toBe(1);
+  });
+
+  it("删除item", () => {
+    const { result } = renderHook(useTodoList);
+    const item = GenerateUndoItem();
+    act(() => {
+      result.current.addUndoItem(item);
+    });
+    expect(result.current.list.length).toBe(1);
+    act(() => {
+      result.current.deleteItem(item);
+    });
+    expect(result.current.list.length).toBe(0);
   });
 });
