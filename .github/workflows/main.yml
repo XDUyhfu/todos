@@ -1,1 +1,20 @@
+  name: CI/CD
+  on:
+    push:
+      branches:
+        - main
+
+  jobs:
+    build:
+      runs-on: ubuntu-latest
+      steps:
+        - name: 拉取代码
+          uses: actions/checkout@v2
+          with:
+            persist-credentials: false
+
+        - name: 测试
+          run:
+            pnpm install
+            pnpm test
 
