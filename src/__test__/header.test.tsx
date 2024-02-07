@@ -31,6 +31,7 @@ describe("header组件测试", () => {
     const addUndoItem = vi.fn();
     render(<Header addUndoItem={addUndoItem} />);
     const input = screen.getByRole("textbox");
+    fireEvent.input(input, { target: { value: testText } });
     fireEvent.keyDown(input, { keyCode: 13 });
     expect(addUndoItem).toBeCalledTimes(1);
   });

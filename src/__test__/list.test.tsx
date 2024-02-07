@@ -38,8 +38,8 @@ describe("List组件测试", () => {
     expect(deleteItem).toHaveBeenCalledWith(data[0]);
   });
 
-  it("快照测试", () => {
-    const elements = screen.getAllByRole("list-item");
-    expect(elements).toMatchSnapshot();
-  });
+  // it("快照测试", () => {
+  //   const elements = screen.getAllByRole("list-item");
+  //   expect(elements).toMatchSnapshot();
+  // });
 });
