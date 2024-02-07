@@ -9,12 +9,25 @@
     build:
       runs-on: ubuntu-latest
       steps:
-      - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: setup pnpm
+        uses: pnpm/action-setup@v2
         with:
           version: 8
       - name: 安装依赖
         run: pnpm install
       - name: 单元测试
         run: pnpm test
+      - name: 构建
+        run: pnpm build
 
+    deploy:
+      needs: [build]
+      runs-on: ubuntu-latest
+      steps:
+        - name: 部署   # 部署
+          uses: JamesIves/github-pages-deploy-action@v4.3.3
+          with:
+            branch: gh-pages # 部署后提交到那个分支
+            folder: dist # 这里填打包好的目录名称
